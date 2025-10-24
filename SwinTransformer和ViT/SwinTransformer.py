@@ -361,7 +361,7 @@ val_loader = DataLoader(val_dataset, batch_size=128, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=128, shuffle=True)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-epochs = 100
+epochs = 200
 model = SwinTransformer(img_size=32, patch_size=2, in_chans=3, num_classes=10, embed_dim=48, depths=[2, 2, 6], num_heads=[2, 4, 8], window_size=4).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
@@ -382,6 +382,7 @@ for epoch in range(epochs):
 
 test_acc = calculate_accuracy(test_loader, model, device)
 print(f"Test Accuracy: {test_acc:.2f}")
+
 
 
 
