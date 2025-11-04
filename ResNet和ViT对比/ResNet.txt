@@ -1,4 +1,3 @@
-nohup: ignoring input
 Epoch 1, Loss: 1.2146, train_acc: 0.56, val_acc: 0.56
 Epoch 2, Loss: 0.9742, train_acc: 0.65, val_acc: 0.65
 Epoch 3, Loss: 0.8609, train_acc: 0.75, val_acc: 0.74
