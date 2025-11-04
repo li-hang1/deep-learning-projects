@@ -1,4 +1,3 @@
-nohup: ignoring input
 Epoch 1, Loss: 1.5648, Train Accuracy: 0.43, Val Accuracy: 0.44
 Epoch 2, Loss: 1.4455, Train Accuracy: 0.49, Val Accuracy: 0.48
 Epoch 3, Loss: 1.2673, Train Accuracy: 0.53, Val Accuracy: 0.52
